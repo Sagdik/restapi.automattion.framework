@@ -18,7 +18,7 @@ public class ResponseValidations {
 		int expectedcode=pr.getStatusCode();
 		String actualContent=pr.getContentType();
 		Assert.assertEquals(statuscode,expectedcode);
-		Assert.assertEquals(actualContent, expectedcode);
+		Assert.assertEquals(contentText, actualContent);
 	}
 	
 	public String responseParse(String jsonpath)
