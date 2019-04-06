@@ -9,17 +9,14 @@ import qa.com.utility.ResponseValidations;
 
 public class PostRequestTestCasesId_001 {
 
-	
-	
 	@Test
-	public void responseTestcaseId_001() throws Exception
-	{
-		Properties pr=PropertiesFile.loadpropertyfile();
-		HttpMethod httprequest=new HttpMethod();
-		
-		  Response res=httprequest.postRequestTesting(pr);
-		  System.out.println(res); 
-		  ResponseValidations validation=new ResponseValidations(res); 
-		  validation.validatereponse(201, "application/json; charset=utf-8");
-		 	}
+	public void responseTestcaseId_001() throws Exception {
+		Properties pr = PropertiesFile.loadpropertyfile();
+		HttpMethod httprequest = new HttpMethod();
+
+		Response res = httprequest.postRequestTesting(pr);
+		System.out.println(res);
+		ResponseValidations validation = new ResponseValidations(res);
+		validation.validatereponse(201, "application/json; charset=utf-8");
+	}
 }
