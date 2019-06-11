@@ -13,7 +13,7 @@ public class ResponseValidations {
 		this.pr=pr;
 	}
 	
-	public void validatereponse(int statuscode,String contentText)
+	public void validateReponse(int statuscode,String contentText)
 	{
 		int expectedcode=pr.getStatusCode();
 		String actualContent=pr.getContentType();
@@ -27,4 +27,6 @@ public class ResponseValidations {
 		return pr.jsonPath().get(jsonpath);
 		
 	}
+
+	
 }
