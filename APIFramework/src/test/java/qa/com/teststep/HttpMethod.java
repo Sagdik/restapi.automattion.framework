@@ -18,14 +18,11 @@ public class HttpMethod {
 		payload.setTitle("Ram Kathar1");
 		payload.setAuthor("Ramnath2");
 
-		Response response = given()
-				.contentType(ContentType.JSON)
-				.body(payload)
-				.when()
+		Response response = given().contentType(ContentType.JSON).body(payload).when()
 				.post("http://localhost:3000/posts/");
 		System.out.println("status code " + response.statusCode());
 		System.out.println(response.asString());
 		return response;
-	
+
 	}
 }

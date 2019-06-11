@@ -17,6 +17,9 @@ public class PostRequestTestCasesId_001 {
 		Response res = httprequest.postRequestTesting(pr);
 		System.out.println(res);
 		ResponseValidations validation = new ResponseValidations(res);
+
+		validation.validateReponse(201, "application/json; charset=utf-8");
+
 		validation.validateReponse(201, "application/json; charset=utf-8");
 	}
 }
